@@ -1,0 +1,43 @@
+@import "~uikit/src/less/uikit.theme.less";
+@import (css) url('https://fonts.googleapis.com/css?family=Poppins:400,400i,700');
+
+
+
+@global-muted-background:                        #f2f7ff;
+@global-primary-background:                      #4285f4;
+@global-secondary-background:                    #747474;
+
+@global-success-background:                      #32d296;
+@global-warning-background:                      #faa05a;
+@global-danger-background:                       #f0506e;
+
+@global-font-family:                            'Poppins', sans-serif;
+
+
+body, html {
+  background-color: @global-muted-background;
+  min-height: 100vh;
+  font-family: @global-font-family;
+}
+
+
+.uk-pagination {
+  justify-content: center;
+}
+
+
+.uk-notification-message-danger {
+  background-color: @global-danger-background;
+  color: #fff;
+  font-size: 14px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  .uk-close {
+    color: #fff;
+    display: block;
+    margin-top: -3px;
+  }
+}
