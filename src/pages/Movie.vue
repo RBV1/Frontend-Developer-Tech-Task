@@ -243,4 +243,23 @@ export default {
   margin-bottom: 0;
   color: @global-secondary-background;
 }
+
+@media (max-width: 991px) {
+
+  .movie__info {
+    width: initial;
+  }
+
+  .movie__poster {
+    margin: 0 auto;
+    max-height: 260px;
+  }
+
+  .movie__wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+}
+
 </style>
